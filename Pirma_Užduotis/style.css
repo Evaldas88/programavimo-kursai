@@ -1,0 +1,17 @@
+    table{
+        border-spacing: 0;
+        border: 5px solid white;
+    }
+    td {
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
+            color: rgb(255, 255, 255);
+            background-color: red;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+
+        }
+        .tuscias {
+            background-color: white;
+        }
