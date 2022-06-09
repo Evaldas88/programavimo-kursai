@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    color: rgb(25, 68, 209);
+}
+ table, th, td {
+  border: 1px solid rgb(0, 0, 0);
+  border-spacing: 0;
+  width: auto;
+  text-align: center;
+ }
+ 
+.align{
+    text-align: center;
+    margin-top: 2px;    
+}
+.tableHolder{
+    width: auto;
+    display:inline-block
+}
+.margin {
+    margin:10px;
+}s
+
+ th{
+     color: pink;
+
+ }
+ td {
+     color: black;
+
+ }
+ .red {
+    color: red;
+    background-color: rgb(204, 204, 112);
+ }
+ .days {
+    color:white;
+    background-color: rgb(193, 213, 253);
+
+ }
+.collor {
+    color:white;
+    background-color: rgb(71, 127, 240);
+}
+.day { 
+    background-color: white;
+}
+.full{
+    background-color: rgb(205, 205, 205)
+}
+

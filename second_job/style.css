@@ -10,7 +10,9 @@ table, td, th {
     height: 20px;
 
 }
-
+body{
+    text-align: center;
+}
 div{
     display:inline-block;
     text-align: center;
