@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+img{
+    max-width: 250px;
+    max-height: 250px;
+}
+nav { 
+    background: rgba(58, 125, 241, 0.375);
+}
+body{
+    margin: 0;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
+    color: rgb(65,50, 50);
+    padding: 12px 25px;
+    display: block;
+}
+nav ul li a:hover {
+    background: rgb(193, 186, 186);
+    color: black;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+.first {
+    text-align: center;
+    background: rgb(202, 202, 232);
+    padding:80px;
+
+}
+.second{
+    text-align: center;
+    background: aquamarine;
+    padding: 130px;
+}
+.third{
+    text-align: center;
+    background: rgb(29, 50, 43);
+}
+.four{
+    text-align: center;
+    background: rgb(60, 16, 51);
+}
+.five{
+    text-align: center;
+    background: rgb(124, 24, 146);
+}
+.six{
+    text-align: center;
+    background: rgb(74, 188, 146);
+}
+.seven{
+    text-align: center;
+    background: rgb(162, 188, 74);
+}
+.eight{
+    text-align: center;
+    background: rgb(17, 40, 32);
+}
+
+.section  {
+width: 100vw;
+height: 100vh;
+}
+.gap{
+margin-top: 40px;
+}
+.left{
+    float: left;
+    margin:10px;
+}
+.right{
+    float: right;
+    margin:10px;
+}
+ul.a {
+    list-style-type: upper-roman;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(6, 45, 45);
+    font-size: 15px;
+
+}
+ul.b {
+    font-family: 'Permanent Marker', cursive;
+    list-style-type: disc;
+    color: brown;
+    font-size: 20px;
+    text-align: right;
+
+}
+ul.c {
+    text-align: left;
+    font-family: 'Blaka Hollow', cursive;
+    font-family: 'Dancing Script', cursive;
+    list-style-type: georgian;
+    font-size: 22px;
+    color: white;
+}
