@@ -49,7 +49,7 @@ nav ul li a:hover {
 .second{
     text-align: center;
     background: aquamarine;
-    padding: 130px;
+    padding: 30px;
 }
 .third{
     text-align: center;
@@ -113,4 +113,12 @@ ul.c {
     list-style-type: georgian;
     font-size: 22px;
     color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.side {
+    width: 50%;
 }
