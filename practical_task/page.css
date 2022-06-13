@@ -37,11 +37,11 @@ text-align: center;
 }
 h1 {
     padding-top: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
     text-align: center;
 }
 
-table,th, td {
+table,tr, td {
     margin-left: auto;
     margin-right: auto;
     width: 350px;
