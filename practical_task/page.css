@@ -63,7 +63,7 @@ td.small {
 .collor {
     background: rgba(236, 236, 236, 0.4);}
 p {
-  text-indent: 50px;
+  text-indent: 90px;
   padding-bottom: 50px;
 }
 img.b {
@@ -80,4 +80,7 @@ img {
 .left {
     float: left;
     margin: 15px;
+}
+.empty {
+    font-weight: bold;
 }
