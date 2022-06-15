@@ -19,12 +19,13 @@
         padding: 0;
     }
 
-
-  
+    .header-row {
+        padding: 18px 0 10px;
+    }
 
     .navigation ul li a {
         color: white;
-        padding: 25px 20px;
+        padding: 5px 15px;
         display: flex;
         font-size: 14px;
         text-decoration: none;
