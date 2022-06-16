@@ -287,3 +287,25 @@
     .card:hover .iconColor {
         color: white;
     }
+
+    .background {
+        background: #f4f7fa;
+    }
+    
+    .col-lg {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    .no-list {
+        list-style: none;
+        padding-left: 0;
+    }
+   
+     .font-badge{
+        font-size: 40px;
+     }
+
+     .bad-color {
+        color: #007bff;
+        margin-right: 5px;
+     }
