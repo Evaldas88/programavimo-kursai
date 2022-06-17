@@ -69,8 +69,6 @@
     .raw {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
     }
 
     .space-between {
@@ -274,8 +272,7 @@
     }
 
     .pb-2 {
-        padding: 30px;
-        padding-bottom: 35px;
+        padding: 30px 30px 35px 0;
     }
 
     .text-tables {
@@ -380,7 +377,7 @@
     }
 
     .icon4 {
-        background-: #ddedea;
+        background: #ddedea;
         color: #45d7ba;
     }
 
