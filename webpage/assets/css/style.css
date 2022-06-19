@@ -70,7 +70,12 @@
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin-right: -15px;
+<<<<<<< HEAD
         }
+=======
+        margin-left: -15px;
+    }
+>>>>>>> c30ec20bd97a63d0cd054c583c8ce67ba17b37c2
 
     .space-between {
         justify-content: space-between;
@@ -240,7 +245,11 @@
     }
 
     h2 {
+<<<<<<< HEAD
         font-size: 36px;
+=======
+        font-size: 34px;
+>>>>>>> c30ec20bd97a63d0cd054c583c8ce67ba17b37c2
         line-height: 1.21;
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
@@ -277,6 +286,7 @@
         min-width: 0;
         word-wrap: break-word;
         transition: transform ease 300ms;
+<<<<<<< HEAD
     }
 
     .price-border:hover {
@@ -300,6 +310,21 @@
         margin-bottom: 0;
     }
 
+=======
+    }
+
+    .pb-2 {
+        padding: 30px;
+        padding-bottom: 35px;
+    }
+
+    .text-tables {
+        color: #707070;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+>>>>>>> c30ec20bd97a63d0cd054c583c8ce67ba17b37c2
     .text-p {
         color: #707070;
         font-size: 15px;
@@ -336,8 +361,13 @@
 
     .no-list {
         list-style: none;
+<<<<<<< HEAD
         padding-left:  15px;
      }
+=======
+        padding-left: 0;
+    }
+>>>>>>> c30ec20bd97a63d0cd054c583c8ce67ba17b37c2
 
     .font-badge {
         font-size: 40px;
@@ -346,7 +376,10 @@
     .bad-color {
         color: #007bff;
         margin-right: 5px;
+<<<<<<< HEAD
         margin-left: -5px;
+=======
+>>>>>>> c30ec20bd97a63d0cd054c583c8ce67ba17b37c2
     }
 
     .col-2 {
@@ -355,12 +388,21 @@
     }
 
     .col-3 {
+<<<<<<< HEAD
         flex: 0 0 31%;
         max-width: 31%;
     }
 
     .icon-padding {
         padding:0 18px 0 15px;
+=======
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+
+    .icon-padding {
+        padding-right: 18px;
+>>>>>>> c30ec20bd97a63d0cd054c583c8ce67ba17b37c2
     }
 
     .icon1, .icon2 ,.icon3, .icon4, .icon5, .icon6  {
@@ -397,7 +439,11 @@
     }
 
     .icon4 {
+<<<<<<< HEAD
         background: #ddedea;
+=======
+        background-: #ddedea;
+>>>>>>> c30ec20bd97a63d0cd054c583c8ce67ba17b37c2
         color: #45d7ba;
     }
 
@@ -411,6 +457,7 @@
         color: #6582ed;
       }
     
+<<<<<<< HEAD
     .background_shape::before{
         content: "";
         position: absolute;
@@ -466,3 +513,9 @@
         font-weight: 700;
         font-family: 'Montserrat', sans-serif;
       }
+=======
+    
+    
+    
+    
+>>>>>>> c30ec20bd97a63d0cd054c583c8ce67ba17b37c2
