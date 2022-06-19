@@ -31,7 +31,7 @@
     }
 
     .header-row {
-        padding: 18px 0 10px;
+        padding: 18px 0 10  x;
     }
 
     .navigation ul li a {
@@ -200,7 +200,7 @@
     }
 
     .textCenter {
-        text-align: center
+        text-align: center  
     }
 
     .borderLine {
@@ -431,7 +431,10 @@
         border-top: 4px solid transparent;
         border-radius: 16px;
         box-shadow: 0 0 0 1px #ebebeb;
+        transition: all 0.2s ease 0s;
+
     }
+
     .pricing-img{
         width: 65px;
         height: 65px;
@@ -456,6 +459,10 @@
         margin-bottom: 24px;
     }
 
+    .list-price ul{
+        padding: 0;
+    }
+
     .price {
         font-size: 2.5rem;
         color: #9629e6;
@@ -466,3 +473,58 @@
         font-weight: 700;
         font-family: 'Montserrat', sans-serif;
       }
+
+    .buy {
+        border-radius: 30px;
+        text-align: center;
+        color: #6730e3;
+         border: 2px solid #6730e3;
+        padding: 10px 25px;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+        }   
+
+    .buy:hover{
+        color: #fff;
+        background: #6730e3;
+        box-shadow: 0 20px 30px 0 rgba(67,37,204,.2);
+  
+    }
+
+    .popular-price {
+
+        box-shadow: 0 .2em .5rem rgba(31,45,61,.125);
+        border-top: 4px solid #9629e6;
+
+    }
+    .card-price:hover {
+        z-index: 2;
+        border-radius: 24px;
+    }
+
+    .buy1 {
+        color: #fff;
+        box-shadow: 0 5px 12px 0 rgba(67,37,204,.2);
+        background: #6730e3;
+        border: 2px solid #6730e3;
+        border-radius: 30px;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 25px;
+
+    }
+
+    .buy1:hover {
+        background: transparent;
+        color: #202877;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    
+    .link{
+        text-decoration: none;
+    }
