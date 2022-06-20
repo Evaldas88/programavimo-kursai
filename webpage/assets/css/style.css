@@ -69,7 +69,7 @@
     .raw {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        margin-right: -15px;
+        margin-right: -15px;    
         }
 
     .space-between {
@@ -431,6 +431,46 @@
         position: relative;
     }
 
+    .video {
+        transition: all 800ms ease-in-out;
+
+    }
+  
+    .video-icon {
+        border-radius: 50%;
+        width: 50px;
+        height: 50%;
+        line-height: 60px;
+        position: relative;
+        z-index: 4;
+        border: none;
+        cursor: pointer;
+        background: white;
+        color: rgb(16, 36, 123);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 0 0 1 rgba(209, 169, 23, 0.4);
+        animation: pulse-animation 1s infinite;
+    }
+    @keyframes pulse-animation {
+        0% {
+          box-shadow: 0 0 0 0px rgba(229, 229, 229, 0.2);
+        }
+        100% {
+          box-shadow: 0 0 0 20px rgba(164, 159, 159, 0);
+        }
+      }
+
+    .video-icon:hover{
+        color: #007bff;
+    }
+    
+    .icon-color {
+        background: white;
+        color: rgb(68, 121, 245);
+
+    }
     .card-price {
         border: none;
         border-top: 4px solid transparent;
@@ -489,6 +529,7 @@
         text-decoration: none;
         margin-left: auto;
         margin-right: auto;
+        background: white;
         }   
 
     .buy:hover{
@@ -528,6 +569,7 @@
         color: #202877;
         -webkit-box-shadow: none;
         box-shadow: none;
+
     }
     
     .link{
