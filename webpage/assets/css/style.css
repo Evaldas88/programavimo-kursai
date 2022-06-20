@@ -223,7 +223,7 @@
     }
 
     .pg1 {
-        flex: 0 0 50%;
+        flex:50%;
         max-width: 50%;
     }
 
@@ -247,7 +247,7 @@
     }
 
     h5 {
-        font-size: 20px;
+        font-size: 18px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         line-height: 1.21;
@@ -287,17 +287,22 @@
 
     
     .col-lg3{
-        flex: 0 0 23%;  
+        flex:23%;  
         max-width: 23%;
     }
     .pb-2 {
         padding: 30px 30px 35px 30px;
     }
 
+    .pl-0 {
+        padding-left: 0;
+    }
+
     .text-tables {
         color: #707070;
         font-size: 14px;
         margin-bottom: 0;
+        line-height: 40px;
     }
 
     .text-p {
@@ -330,13 +335,12 @@
     }
 
     .col-lg {
-        flex: 0 0 44%;
+        flex:44%;
         max-width: 44%;
     }
 
     .no-list {
         list-style: none;
-        padding-left:  15px;
      }
 
     .font-badge {
@@ -347,16 +351,17 @@
         color: #007bff;
         margin-right: 5px;
         margin-left: -5px;
+        float: left;
     }
 
     .col-2 {
-        flex: 0 0 66%;
+        flex:66%;
         max-width: 66%;
     }
 
     .col-3 {
-        flex: 0 0 31%;
-        max-width: 31%;
+        flex: 32%;
+        max-width: 32%;
     }
 
     .icon-padding {
