@@ -16,7 +16,9 @@
         margin-bottom: 15px;
     }
 
-    header {
+    /* Header style*/
+
+     header {
         background-image: linear-gradient(to right, rgba(32, 40, 119, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
         position: fixed;
         width: 100%;
@@ -75,6 +77,8 @@
     .space-between {
         justify-content: space-between;
     }
+
+        /* Section 1*/
 
     .bg2 {
         background: url('../picture/bacground.png');
@@ -223,7 +227,6 @@
     }
 
     .pg1 {
-        flex: 50%;
         max-width: 50%;
     }
 
@@ -236,6 +239,10 @@
     }
 
     .pg {
+        margin-bottom: 40px;
+    }
+
+    .pg1{
         margin-bottom: 40px;
     }
 
@@ -277,7 +284,6 @@
     }
 
     .col-lg3 {
-        flex: 23%;
         max-width: 23%;
     }
 
@@ -327,7 +333,6 @@
     }
 
     .col-lg {
-        flex: 44%;
         max-width: 44%;
     }
 
@@ -347,12 +352,10 @@
     }
 
     .col-2 {
-        flex: 66%;
         max-width: 66%;
     }
 
     .col-3 {
-        flex: 32%;
         max-width: 32%;
     }
 
@@ -470,7 +473,7 @@
     }
 
 
-    .google {
+    .store {
         border-radius: 30px;
         text-align: center;
         color: #6730e3;
@@ -485,18 +488,17 @@
         margin-right: 20px;
     }
 
-    .google:hover {
+    .store:hover {
         background: transparent;
         color: white;
         border: 1px solid white;
-
     }
-
-    .app-store {
+    
+    .store1 {
         border-radius: 30px;
         text-align: center;
         color: white;
-        border: 1px solid white;
+        border: 2px solid white;
         padding: 12px 30px;
         font-family: 'Open Sans', sans-serif;
         text-decoration: none;
@@ -504,18 +506,18 @@
         margin-right: auto;
         background: transparent;
         font-weight: 700;
+        margin-right: 20px;
     }
 
-    .app-store:hover {
-        border: 1px solid white;
+    .store1:hover {
         background: white;
-        color: #6730e3;
+        color:#6730e3;
+        border: 1px solid white
     }
 
     .height-app{
         padding-top: 50px;
     }
-
 
 
     .video-icon:hover {
@@ -591,12 +593,20 @@
     .buy:hover {
         color: #fff;
         background: #6730e3;
-        box-shadow: 0 20px 30px 0 rgba(67, 37, 204, .2);
 
+    }
+    .col-3:nth-child(2) a{
+        color: white;
+        background: #6730e3;
+        ;
+    }
+    .col-3:nth-child(2):hover a {
+        border: 2px solid #6730e3;
+        background: white;
+        color: #010309;
     }
 
     .popular-price {
-
         box-shadow: 0 .2em .5rem rgba(31, 45, 61, .125);
         border-top: 4px solid #9629e6;
 
@@ -605,27 +615,6 @@
     .card-price:hover {
         z-index: 2;
         border-radius: 24px;
-    }
-
-    .buy1 {
-        color: #fff;
-        box-shadow: 0 5px 12px 0 rgba(67, 37, 204, .2);
-        background: #6730e3;
-        border: 2px solid #6730e3;
-        border-radius: 30px;
-        text-decoration: none;
-        font-family: 'Open Sans', sans-serif;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px 25px;
-
-    }
-
-    .buy1:hover {
-        background: transparent;
-        color: #202877;
-        box-shadow: none;
-
     }
 
     .link {
