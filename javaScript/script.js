@@ -99,6 +99,22 @@
 //                      8task
 
 
-    let text = 'Dont Be a Menace to South Central While Drinking Your Juice in the Hood'
-        mtext= text.match(/\b[a-zA-Z]{5,}\b/g)
-        console.log(mtext.length)   
+    // let text = 'Dont Be a Menace to South Central While Drinking Your Juice in the Hood'
+    //     mtext= text.match(/\b[a-zA-Z]{5,}\b/g)
+    //     console.log(mtext.length)   
+
+
+        const text = 'Dont Be a Menace to South Central While Drinking Your Juice in the Hood'
+
+        const words = text.split(' ')
+        const good = words.map((words) => words.length >= 5)
+        const count = good.filter (value => value === true).length
+        console.log(count)
+
+
+
+       const text1 = 'Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale'
+       const word = text1.split(' ')
+       const another = word.map((words) => words.length >= 5)
+       const count1 = another.filter (value => value === true).length
+       console.log(count1)
