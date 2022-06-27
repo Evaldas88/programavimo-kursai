@@ -1,5 +1,4 @@
-
-//      1 task
+//1 task
 // const firstname = 'keanu'
 // const lastname = 'Reeves'
 
@@ -118,3 +117,22 @@
        const another = word.map((words) => words.length >= 5)
        const count1 = another.filter (value => value === true).length
        console.log(count1)
+
+
+
+
+       //extra task 
+        
+
+
+
+       const random = (length = 3) => {
+        let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let letters = '';
+        for (let i = 0; i < length; i++) {
+            letters += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        return letters;
+    }
+        
+       console.log(random(3))
