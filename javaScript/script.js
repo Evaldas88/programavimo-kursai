@@ -1,5 +1,4 @@
-
-//      1 task
+//1 task
 // const firstname = 'keanu'
 // const lastname = 'Reeves'
 
@@ -120,10 +119,22 @@
        console.log(count1)
 
 
+<<<<<<< HEAD
        //extra task 
 
        const random = (length = 3) => {
         let chars = 'abcdefghijklmnopqrstuvwxyz';
+=======
+
+
+       //extra task 
+        
+
+
+
+       const random = (length = 3) => {
+        let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+>>>>>>> e7febf43deece96f6a41d701d374a77c916a0c7a
         let letters = '';
         for (let i = 0; i < length; i++) {
             letters += chars.charAt(Math.floor(Math.random() * chars.length));

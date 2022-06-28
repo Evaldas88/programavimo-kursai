@@ -677,7 +677,11 @@ h5 {
     box-shadow: 0 0 0 1px #ebebeb;
     display: inline-block;
     text-align: center;
+<<<<<<< HEAD
     column-rule-color: #6730e3;
+=======
+    color: #6730e3;
+>>>>>>> e7febf43deece96f6a41d701d374a77c916a0c7a
     text-decoration: none   ;
     line-height: 2.5;
   }
@@ -710,4 +714,20 @@ h5 {
 
 .frame1 {
     margin-left: -110px!important;  
+<<<<<<< HEAD
+=======
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    border-radius: 50%;
+    background:#838285;
+    display: inline-block;
+}
+
+.arrow a:nth-child(1) {
+    background:#6730e3 ;
+>>>>>>> e7febf43deece96f6a41d701d374a77c916a0c7a
 }
