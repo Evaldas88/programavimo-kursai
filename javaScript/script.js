@@ -96,7 +96,7 @@
 
     // console.log(n3text)
     
-//                      8task
+//            8task
 
 
     // let text = 'Dont Be a Menace to South Central While Drinking Your Juice in the Hood'
@@ -107,7 +107,7 @@
         const text = 'Dont Be a Menace to South Central While Drinking Your Juice in the Hood'
 
         const words = text.split(' ')
-        const good = words.map((words) => words.length >= 5)
+        const good = words.map((words) => words.length <= 5)
         const count = good.filter (value => value === true).length
         console.log(count)
 
@@ -115,6 +115,20 @@
 
        const text1 = 'Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale'
        const word = text1.split(' ')
-       const another = word.map((words) => words.length >= 5)
+       const another = word.map((word) => word.length <= 5)
        const count1 = another.filter (value => value === true).length
        console.log(count1)
+
+
+       //extra task 
+
+       const random = (length = 3) => {
+        let chars = 'abcdefghijklmnopqrstuvwxyz';
+        let letters = '';
+        for (let i = 0; i < length; i++) {
+            letters += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        return letters;
+    }
+        
+       console.log(random(3))
