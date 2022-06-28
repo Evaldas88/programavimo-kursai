@@ -107,4 +107,10 @@ console.log(all)
     
   
     
-    console.log('Nuliu '+ counter0, 'Vienetu ' +counter1, 'dvejetu ' + counter2 )
+    console.log('Nuliu '+ counter0, 'Vienetu ' + counter1, 'dvejetu ' + counter2 )
+
+
+
+    //  5 task
+
+    
