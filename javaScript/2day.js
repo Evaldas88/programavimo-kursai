@@ -39,40 +39,36 @@
 
 
 // 3task
-function getRandomInt(min, max){
-    min = Math.ceil(min)
-    max = Math.floor(max)
-    return Math.floor(Math.random() * (max-min) + min)
-}
+// function getRandomInt(min, max){
+//     min = Math.ceil(min)
+//     max = Math.floor(max)
+//     return Math.floor(Math.random() * (max-min) + min)
+// }
 
 
-let c = getRandomInt(0, 26);
-let d = getRandomInt(0, 26);
-let e = getRandomInt(0, 26);
-console.log(c)
-console.log(d)
-console.log(e)
+// let c = getRandomInt(0, 26);
+// let d = getRandomInt(0, 26);
+// let e = getRandomInt(0, 26);
+// function middle( c, d, e){
+//         if(c>d){
+//             if(d>e)
+//                 return d;
+//             else if(c>e)
+//                 return e;
+//             else 
+//                 return c;
+//         }
+//         else {
+//             if (c>e)
+//                 return c;
+//             else if(d>e)
+//                 return e;
+//             else
+//             return d;
+//         }
 
-function middle( c, d, e){
-        if(c>d){
-            if(d>e)
-                return d;
-            else if(c>e)
-                return e;
-            else 
-                return c;
-        }
-        else {
-            if (c>e)
-                return c;
-            else if(d>e)
-                return e;
-            else
-            return d;
-        }
-
-    }
-    console.log(middle( c, d, e))
+//     }
+//     console.log(middle( c, d, e))
 
 
 
@@ -137,6 +133,9 @@ function middle( c, d, e){
 //     }
 
 //     console.log('Nuliu '+ counter0, 'Vienetu ' + counter1, 'dvejetu ' + counter2 )
+
+
+
 //  5 task
 
 
@@ -162,3 +161,13 @@ function middle( c, d, e){
 //     document.getElementById("place5").innerHTML += a
 // }
 
+//6 task
+
+let x = '*'
+
+    document.getElementById("more").innerHTML += x.repeat(400)
+
+let y = '*'
+function splitWord(word, length) {
+    return word.substring(0, length);
+}document.getElementById("again").innerHTML += y.repeat(400)
