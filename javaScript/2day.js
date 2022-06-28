@@ -72,25 +72,39 @@
 //     console.log(middle( c, d, e))
 
 
-// 4task
+
+
+
+// // 4task
 
 function getRandomInt(min, max){
     min = Math.ceil(min)
     max = Math.floor(max)
     return Math.floor(Math.random() * (max-min) + min)
 }
-const first = getRandomInt(0, 3);
+let a = getRandomInt(0, 3);                                               
+let b = getRandomInt(0, 3);
+let c = getRandomInt(0, 3);
+let d = getRandomInt(0, 3);
+
+let all = a + " " + b + " " + c + " " + d
+console.log(all)
+    let counter0 = 0
+    let counter1 = 0
+    let counter2 = 0
 
 
-const second = getRandomInt(0, 3);
-
-const third = getRandomInt(0, 3);
-
-const count = first + second  + third
-
-
-
-for(const i = 0; i < count.length; ++i)
-{   
-}
-console.log(count)
+    for (let i = 0; i < all.length; i++) {
+        if(all === 0){
+        counter0++
+    }
+    else if(all === 1){
+        counter1++
+    }
+    else(all === 2)
+        counter2++
+    }
+    
+  
+    
+    console.log('Nuliu '+ counter0, 'Vienetu ' +counter1, 'dvejetu ' + counter2 )
