@@ -18,7 +18,7 @@
 //     max = Math.floor(max)
 //     return Math.floor(Math.random() * (max-min) + min)
 // }
- 
+
 // let a = getRandomInt(0, 5)
 // let b = getRandomInt(0, 5)
 
@@ -38,38 +38,41 @@
 // }
 
 
-// // 3task
-// function getRandomInt(min, max){
-//     min = Math.ceil(min)
-//     max = Math.floor(max)
-//     return Math.floor(Math.random() * (max-min) + min)
-// }
- 
+// 3task
+function getRandomInt(min, max){
+    min = Math.ceil(min)
+    max = Math.floor(max)
+    return Math.floor(Math.random() * (max-min) + min)
+}
 
-// let c = getRandomInt(0, 26);
-// let d = getRandomInt(0, 26);
-// let e = getRandomInt(0, 26);
 
-// function middle( c, d, e){
-//         if(c>d){
-//             if(d>e)
-//                 return d;
-//             else if(c>e)
-//                 return e;
-//             else 
-//                 return c;
-//         }
-//         else {
-//             if (c>e)
-//                 return c;
-//             else if(d>e)
-//                 return e;
-//             else
-//             return d;
-//         }
-        
-//     }
-//     console.log(middle( c, d, e))
+let c = getRandomInt(0, 26);
+let d = getRandomInt(0, 26);
+let e = getRandomInt(0, 26);
+console.log(c)
+console.log(d)
+console.log(e)
+
+function middle( c, d, e){
+        if(c>d){
+            if(d>e)
+                return d;
+            else if(c>e)
+                return e;
+            else 
+                return c;
+        }
+        else {
+            if (c>e)
+                return c;
+            else if(d>e)
+                return e;
+            else
+            return d;
+        }
+
+    }
+    console.log(middle( c, d, e))
 
 
 
@@ -96,7 +99,7 @@
 //         console.log(c)
 //         console.log(d)
 
-     
+
 //     if(a === 0){
 //         counter0++
 //     }
@@ -134,28 +137,28 @@
 //     }
 
 //     console.log('Nuliu '+ counter0, 'Vienetu ' + counter1, 'dvejetu ' + counter2 )
-    //  5 task
+//  5 task
 
 
 
-    function getRandomInt(min, max){
-    min = Math.ceil(min)
-    max = Math.floor(max)
-    return Math.floor(Math.random() * (max-min) + min)
-}
-    let a = getRandomInt(1, 7)
-    console.log(a)
-    if (a === 1){
-        document.getElementById("place").innerHTML += a
-    }else if(a ===2){
-        document.getElementById("place1").innerHTML += a
-    }else if(a ===3){
-        document.getElementById("place2").innerHTML += a
-    }else if(a ===4){
-        document.getElementById("place3").innerHTML += a
-    }else if(a ===5){
-        document.getElementById("place4").innerHTML += a
-    }else if(a ===6){
-        document.getElementById("place5").innerHTML += a
-    }
-        
+// function getRandomInt(min, max) {
+//     min = Math.ceil(min)
+//     max = Math.floor(max)
+//     return Math.floor(Math.random() * (max - min) + min)
+// }
+// let a = getRandomInt(1, 7)
+// console.log(a)
+// if (a === 1) {
+//     document.getElementById("place").innerHTML += a
+// } else if (a === 2) {
+//     document.getElementById("place1").innerHTML += a
+// } else if (a === 3) {
+//     document.getElementById("place2").innerHTML += a
+// } else if (a === 4) {
+//     document.getElementById("place3").innerHTML += a
+// } else if (a === 5) {
+//     document.getElementById("place4").innerHTML += a
+// } else if (a === 6) {
+//     document.getElementById("place5").innerHTML += a
+// }
+
