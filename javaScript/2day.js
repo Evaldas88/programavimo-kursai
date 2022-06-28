@@ -82,35 +82,73 @@ function getRandomInt(min, max){
     max = Math.floor(max)
     return Math.floor(Math.random() * (max-min) + min)
 }
-let a = getRandomInt(0, 3);                                               
-let b = getRandomInt(0, 3);
-let c = getRandomInt(0, 3);
-let d = getRandomInt(0, 3);
 
-let all = a + " " + b + " " + c + " " + d
-console.log(all)
-    let counter0 = 0
-    let counter1 = 0
-    let counter2 = 0
+     a = getRandomInt(0, 3);                                               
+     b = getRandomInt(0, 3);
+     c = getRandomInt(0, 3);
+     d = getRandomInt(0, 3);
 
+        let counter0 = 0
+        let counter1 = 0
+        let counter2 = 0
+        console.log(a)
 
-    for (let i = 0; i < all.length; i++) {
-        if(all === 0){
+     
+        if(a === 0){
         counter0++
     }
-    else if(all === 1){
+    else if(a === 1){
         counter1++
     }
-    else(all === 2)
+    else(a === 2)
         counter2++
-    }
+
+   
+    console.log('Nuliu '+ counter0, 'Vienetu ' + counter1, 'dvejetu ' + counter2 )
+
+
+
+
+
+
+
+    // for (let i = 0; i < a; i++) {
+    //     if(a === 0){
+    //     counter0++
+    // }
+    // else if(a === 1){
+    //     counter1++
+    // }
+    // else(a === 2)
+    //     counter2++
+
+    // {if(a === 0){
+    //     counter0++
+    // }
+    // else if(a === 1){
+    //     counter1++
+    // }
+    // else(a === 2)
+    // counter2++
+    
+    // }
     
   
     
-    console.log('Nuliu '+ counter0, 'Vienetu ' + counter1, 'dvejetu ' + counter2 )
+    // console.log('Nuliu '+ a, 'Vienetu ' + counter1, 'dvejetu ' + counter2 )
 
 
 
     //  5 task
 
-    
+
+
+//     function getRandomInt(min, max){
+//     min = Math.ceil(min)
+//     max = Math.floor(max)
+//     return Math.floor(Math.random() * (max-min) + min)
+// }
+ 
+//     let a = getRandomInt(1, 6)
+        
+//     document.getElementById("place").innerHTML = a
