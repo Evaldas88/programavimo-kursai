@@ -77,78 +77,85 @@
 
 // // 4task
 
-function getRandomInt(min, max){
-    min = Math.ceil(min)
-    max = Math.floor(max)
-    return Math.floor(Math.random() * (max-min) + min)
-}
-
-     a = getRandomInt(0, 3);                                               
-     b = getRandomInt(0, 3);
-     c = getRandomInt(0, 3);
-     d = getRandomInt(0, 3);
-
-        let counter0 = 0
-        let counter1 = 0
-        let counter2 = 0
-        console.log(a)
-
-     
-        if(a === 0){
-        counter0++
-    }
-    else if(a === 1){
-        counter1++
-    }
-    else(a === 2)
-        counter2++
-
-   
-    console.log('Nuliu '+ counter0, 'Vienetu ' + counter1, 'dvejetu ' + counter2 )
-
-
-
-
-
-
-
-    // for (let i = 0; i < a; i++) {
-    //     if(a === 0){
-    //     counter0++
-    // }
-    // else if(a === 1){
-    //     counter1++
-    // }
-    // else(a === 2)
-    //     counter2++
-
-    // {if(a === 0){
-    //     counter0++
-    // }
-    // else if(a === 1){
-    //     counter1++
-    // }
-    // else(a === 2)
-    // counter2++
-    
-    // }
-    
-  
-    
-    // console.log('Nuliu '+ a, 'Vienetu ' + counter1, 'dvejetu ' + counter2 )
-
-
-
-    //  5 task
-
-
-
-//     function getRandomInt(min, max){
+// function getRandomInt(min, max){
 //     min = Math.ceil(min)
 //     max = Math.floor(max)
 //     return Math.floor(Math.random() * (max-min) + min)
 // }
- 
-//     let a = getRandomInt(1, 6)
+
+//      a = getRandomInt(0, 3);                                               
+//      b = getRandomInt(0, 3);
+//      c = getRandomInt(0, 3);
+//      d = getRandomInt(0, 3);
+
+//         let counter0 = 0
+//         let counter1 = 0
+//         let counter2 = 0
+//         console.log(a)
+//         console.log(b)
+//         console.log(c)
+//         console.log(d)
+
+     
+//     if(a === 0){
+//         counter0++
+//     }
+//     else if(a === 1){
+//         counter1++
+//     }
+//     else{
+//         counter2++
+//     }
+//     if(b === 0){
+//         counter0++
+//     }
+//     else if(b === 1){
+//         counter1++
+//     }
+//     else{
+//         counter2++
+//     }  if(c === 0){
+//         counter0++
+//     }
+//     else if(c === 1){
+//         counter1++
+//     }
+//     else{
+//         counter2++
+//     }
+//     if(d === 0){
+//         counter0++
+//     }
+//     else if(d === 1){
+//         counter1++
+//     }
+//     else{
+//         counter2++
+//     }
+
+//     console.log('Nuliu '+ counter0, 'Vienetu ' + counter1, 'dvejetu ' + counter2 )
+    //  5 task
+
+
+
+    function getRandomInt(min, max){
+    min = Math.ceil(min)
+    max = Math.floor(max)
+    return Math.floor(Math.random() * (max-min) + min)
+}
+    let a = getRandomInt(1, 7)
+    console.log(a)
+    if (a === 1){
+        document.getElementById("place").innerHTML += a
+    }else if(a ===2){
+        document.getElementById("place1").innerHTML += a
+    }else if(a ===3){
+        document.getElementById("place2").innerHTML += a
+    }else if(a ===4){
+        document.getElementById("place3").innerHTML += a
+    }else if(a ===5){
+        document.getElementById("place4").innerHTML += a
+    }else if(a ===6){
+        document.getElementById("place5").innerHTML += a
+    }
         
-//     document.getElementById("place").innerHTML = a
