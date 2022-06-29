@@ -13,16 +13,21 @@
 
 <body>
 
-    <h1>Sesta uzduotis
+    <h1 >Sesta uzduotis
+    <span id="bla">
+    </span>
     </h1>
     <script>
-      
-      
+
+
+        let good = document.getElementById("bla").style.wordBreak = "break-all";
+        
       for (let i = 0; i < 400; i++) {
-        if (i % 40  === 0){
+        if (i % 50  === 0){
             document.write("\n")
         }
         document.write("*")
+        document.getElementById("bla").style.wordBreak = good
         }
     
 
