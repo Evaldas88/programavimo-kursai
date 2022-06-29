@@ -1,9 +1,9 @@
-// // 1task
+//1task
 
 // const Firstname = 'Evaldas '
 // const Lastname = 'Skackauskas'
-// const birthdate = 1990
-// const today = 2022
+// const birthdate = '1990'
+// const today = '2022'
 
 // const age = today - birthdate
 
@@ -17,7 +17,7 @@
 //     min = Math.ceil(min)
 //     max = Math.floor(max)
 //     return Math.floor(Math.random() * (max-min) + min)
-
+// }
 
 // let a = getRandomInt(0, 5)
 // let b = getRandomInt(0, 5)
@@ -25,16 +25,13 @@
 // console.log(a + " "  +b)
 
 
-// if( a === 0 || b ===0 ){
-//     document.write('skaiciai nuliai')
-// }else
 // if(a > b) {
 
-//     document.write(<p> Rezultatas: ${a / b}</p>)
+//     console.log(Math.round((a/b) *100) /100)
 
 // }else if(a<b){
 
-//     document.write(<p> Rezultatas: ${b / a}</p>)
+//     console.log(Math.round((b/a) *100) /100)
 // }
 // else{
 //     console.log('tie')
@@ -42,40 +39,36 @@
 
 
 // 3task
-    // function getRandomInt(min, max){
-    //     min = Math.ceil(min)
-    //     max = Math.floor(max)
-    //     return Math.floor(Math.random() * (max-min) + min)
-    // }
+// function getRandomInt(min, max){
+//     min = Math.ceil(min)
+//     max = Math.floor(max)
+//     return Math.floor(Math.random() * (max-min) + min)
+// }
 
 
-    // let c = getRandomInt(0, 26);
-    // let d = getRandomInt(0, 26);
-    // let e = getRandomInt(0, 26);
-    // console.log(c)
-    // console.log(d)
-    // console.log(e)
+// let c = getRandomInt(0, 26);
+// let d = getRandomInt(0, 26);
+// let e = getRandomInt(0, 26);
+// function middle( c, d, e){
+//         if(c>d){
+//             if(d>e)
+//                 return d;
+//             else if(c>e)
+//                 return e;
+//             else 
+//                 return c;
+//         }
+//         else {
+//             if (c>e)
+//                 return c;
+//             else if(d>e)
+//                 return e;
+//             else
+//             return d;
+//         }
 
-    // function middle( c, d, e){
-    //         if(c>d){
-    //             if(d>e)
-    //                 return d;
-    //             else if(c>e)
-    //                 return e;
-    //             else 
-    //                 return c;
-    //         }
-    //         else {
-    //             if (c>e)
-    //                 return c;
-    //             else if(d>e)
-    //                 return e;
-    //             else
-    //             return d;
-    //         }
-
-    //     }
-    //     console.log(middle( c, d, e))
+//     }
+//     console.log(middle( c, d, e))
 
 
 
@@ -89,18 +82,18 @@
 //     return Math.floor(Math.random() * (max-min) + min)
 // }
 
-//     let  a = getRandomInt(0, 3);                                               
-//     let b = getRandomInt(0, 3);
-//     let c = getRandomInt(0, 3);
-//     let d = getRandomInt(0, 3);
+//      a = getRandomInt(0, 3);                                               
+//      b = getRandomInt(0, 3);
+//      c = getRandomInt(0, 3);
+//      d = getRandomInt(0, 3);
 
 //         let counter0 = 0
 //         let counter1 = 0
 //         let counter2 = 0
 //         console.log(a)
 //         console.log(b)
-// //         console.log(c)
-// //         console.log(d)
+//         console.log(c)
+//         console.log(d)
 
 
 //     if(a === 0){
@@ -175,10 +168,7 @@
 //     document.getElementById("more").innerHTML += x.repeat(400)
 
 // let y = '*'
+// function split
 
 
-// document.getElementById("again").innerHTML += (y.repeat(50) + "<br>").repeat(8)  
-
-
-// 7 task
-
+// document.getElementById("again").innerHTML += y.repeat(400)
