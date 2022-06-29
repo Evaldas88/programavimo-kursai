@@ -1,26 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="">
 </head>
+
 <body>
-    <script>
 
-        for( let i = 0; i < 300; i++){
-            let i =  Math.floor(Math.random() * 300) + 1;
-            document.write(`${i}  `)
+    <h1>7 uzduotis
+        
+    </h1>
+    <span id="test"></span>
+    <p2 id="test2"></p2>
+        <script>
+            
+
+            function getRandomInt(min, max) {
+                min = Math.ceil(min)
+                max = Math.floor(max)
+                return Math.floor(Math.random() * (max - min) + min)
+            }
+            let all = document.getElementById("test");
+            all.style.color = 'red';
+            all.style.fontSize = '20px';
+            let back= document.getElementById("test2");
+            
+
+            let counter = 0;
+            let a = getRandomInt(1, 300)
+            for (let i = 0; i < 300; i++) {
+                let a = Math.floor(Math.random() * 300) + 1;{
+                    if ( a > 150){
+                    counter++
+                }
+                if (a > 300){ 
+                    all.innerHTMLs('<span> id="all"" style="color: red"></span> ')
+            }
+                all.innerHTML += a + ' '
+                
+            }
         }
-        
-        
+            
+            back.innerHTML += (`<p> viso skaiciu nuo 150 yra  <strong>${counter++} <strong></p>`)
 
 
 
 
-    </script>
+
+        </script>
 
 
 </body>
+
 </html>

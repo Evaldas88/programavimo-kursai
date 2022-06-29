@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-    </style>
 </head>
-
 <body>
-
     <h1>Sesta uzduotis
-    </h1>
+    </h1><span id="test">
+
+    </span>
     <script>
       
-      
+      let all = document.getElementById("test")
       for (let i = 0; i < 400; i++) {
-        if (i % 40  === 0){
-            document.write("\n")
+        if ((i % 50)  == 0){
+            all.innerHTML += "<br>"
         }
-        document.write("*")
-        }
-    
+        all.innerHTML += '*'
+      }
+      
 
     </script>
 </body>
-
 </html>
