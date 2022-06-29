@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+
+</head>
+<body>
+    <h1>2task
+    </h1><div id="test">
+
+    </div>
+    <script>
+       let all = document.getElementById("test");
+             all.style.textAlign= 'center';
+            all.style.display= 'block';    
+            all.style.lineHeight= '0.5';
+            all.style.border= '1px solid red';
+            all.style.background = 'linear-gradient(45deg, transparent calc(50% - 1px), red 50%, transparent calc(50% + 1px) )'
+            all.style.width = '800px'
+      for (let i = 0; i < 10000; i++) {
+        if ((i % 100) == 0 ) {
+            all.innerHTML += "<br>"
+        }
+        all.innerHTML += '*'
+      }
+      
+
+    </script>
+</body>
+</html>
+</body>
+</html>
