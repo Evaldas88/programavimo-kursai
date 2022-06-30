@@ -96,7 +96,7 @@
 //         console.log(d)
 
 
-//     if(a === 0){
+//     if(a === 0 ){
 //         counter0++
 //     }
 //     else if(a === 1){

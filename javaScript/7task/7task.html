@@ -23,7 +23,7 @@
                 return Math.floor(Math.random() * (max - min) + min)
             }
             let all = document.getElementById("test");
-            all.style.color = 'red';
+            //all.style.color = 'red';
             all.style.fontSize = '20px';
             let back= document.getElementById("test2");
             
@@ -31,17 +31,17 @@
             let counter = 0;
             let a = getRandomInt(1, 300)
             for (let i = 0; i < 300; i++) {
-                let a = Math.floor(Math.random() * 300) + 1;{
-                    if ( a > 150){
+                let a = Math.floor(Math.random() * 300) + 1;
+                if ( a > 150) {
                     counter++
                 }
-                if (a > 300){ 
-                    all.innerHTMLs('<span> id="all"" style="color: red"></span> ')
-            }
+                if (a > 275) { 
+                    all.innerHTML += `<span style="color: red">${a}</span> `
+                }
                 all.innerHTML += a + ' '
    
+
             }
-        }
             back.innerHTML += (`<p> viso skaiciu nuo 150 yra  <strong>${counter++} <strong></p>`)
         </script>
 
