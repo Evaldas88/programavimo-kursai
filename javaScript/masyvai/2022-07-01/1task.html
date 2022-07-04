@@ -19,18 +19,86 @@
         }
 
         let masyvas = []
+        let masyvas1 = []
+        let masyvas2 = []
+        // let masyvas4 = []
+
         let raides = "ABCD"
         let ilgis = 200
-        let count = 0
+        let count = 1
         let text = ''
+        let  o = {}
         // text.split('')
 
         for (i = 0; i < 200; i++) {
     
            let text = raides.charAt(Math.random() * raides.length)
             masyvas.push(text)
-        }  
-            console.log(masyvas)
+        }
+          
+
+        console.log(masyvas)
+
+        for (let i = 0; i < masyvas.length; i++){
+            if(masyvas[i] === 0 ){
+                count++
+            }
+        }
+        masyvas.forEach(w => w.split('').forEach(a => o[a] = (o[a] || 0)+1));
+        console.log(o)
+
+        // Išrūšiuokite pirmo uždavinio masyvą pagal abecėlę.
+
+        masyvas.sort((a, b) => a - b);
+        console.log(masyvas)
+
+//Sugeneruokite 3 masyvus pagal pirmojo uždavinio sąlygą. Sudėkite masyvus, sudėdami reiksmes pagal atitinkamus indeksus. Paskaičiuokite kiek unikalių (po vieną, nesikartojančių) reikšmių ir kiek unikalių kombinacijų gavote.
+
+        for (i = 0; i < 200; i++) {
+            
+            let text = raides.charAt(Math.random() * raides.length)
+            masyvas.push(text)
+        }
+
+        for (i = 0; i < 200; i++) {
+            
+            let text = raides.charAt(Math.random() * raides.length)
+            masyvas1.push(text)
+        }
+
+        for (i = 0; i < 200; i++) {
+            
+            let text = raides.charAt(Math.random() * raides.length)
+            masyvas2.push(text)
+        }
+
+
+        let masyvas3 = [masyvas, masyvas1, masyvas2].reduce((a,b) => a.map((v, i) => v + b[i]));
+
+
+         let a = {};
+         for( i = 0; i < masyvas3.length; i++){
+            a[masyvas3[i]] = 1 + (a[masyvas3[i]] || 0)
+         }
+
+
+
+
+
+
+        console.log(masyvas)
+        console.log(masyvas1)
+        console.log(masyvas2)
+        console.log(masyvas3)
+
+        console.log(a)
+
+
+
+
+
+
+
 
 
 
