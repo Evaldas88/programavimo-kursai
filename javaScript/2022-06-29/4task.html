@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>5task
+    </h1>
+    <div id="test">
+
+        <h3 id="test1" ></h3>
+
+    </div>
+    <script>
+
+        function rand(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        let all = document.getElementById("test");
+        let count = document.getElementById("test1");
+        // while (stop) {
+        //     let rezultatas = rand(0, 1)
+        //     if (rezultatas === 1) {
+        //         all.innerHTML += 'S'
+        //     } else {
+        //         all.innerHTML += 'H'
+        //         stop = false
+        //     }
+
+        // }
+        let stop = true
+        let number = 0
+        while (stop) {
+            let rezultatas = rand(0, 1)
+            
+            if (rezultatas != 1) {
+                count.innerHTML += 'H'
+                number++
+            } else {
+                count.innerHTML += 'S'
+                number = 0
+            }
+            
+            if(number === 3){
+                stop = false
+            }
+        }
+
+    </script>
+</body>
+</html>

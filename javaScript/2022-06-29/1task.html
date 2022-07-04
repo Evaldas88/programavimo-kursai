@@ -9,12 +9,18 @@
 <body>
     <script>
 
-    for( let i = 0; i < 30000; i++){
-        
-        if(i % 77 == 0){
-            document.write(`${i} `+`, `)
+    let size = 3000
+    let html = ''
+    let kablelis = ', '
+    for( let i = 0; i < 3000; i++){
+        if(i===size-(size % 77)){
+            kablelis = ''
         }
+        if(i % 77 === 0){
+            html += i + kablelis          
+         }
     }
+    document.write(html)
     </script>
 </body>
 </html>

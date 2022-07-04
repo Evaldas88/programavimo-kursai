@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        function rand(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        //         2022-06-30
+
+        // Sugeneruokite masyvą iš 30 elementų (indeksai nuo 0 iki 29), kurių reikšmės yra atsitiktiniai skaičiai nuo 5 iki 25.
+        // Naudodamiesi 1 uždavinio masyvu:
+        // Suskaičiuokite kiek masyve yra reikšmių didesnių už 10;
+        // Raskite didžiausią masyvo reikšmę ir jos indeksą arba indeksus jeigu yra keli;
+        // Suskaičiuokite visų porinių (lyginių) indeksų reikšmių sumą;
+        // Sukurkite naują masyvą, kurio reikšmės yra 1 uždavinio masyvo reikšmes minus tos reikšmės indeksas;
+        // Papildykite masyvą papildomais 10 elementų su reikšmėmis nuo 5 iki 25, kad bendras masyvas padidėtų iki indekso 39;
+        // Iš masyvo elementų sukurkite du naujus masyvus. Vienas turi būti sudarytas iš neporinių indeksų reikšmių, o kitas iš porinių;
+        // Pirminio masyvo elementus su poriniais indeksais padarykite lygius 0 jeigu jie didesni už 15;
+        // Naudodami funkciją splice() iš masyvo ištrinkite visus elementus kurių reikšmės didesnės už 10;
+        // Naudodami funkciją splice() iš masyvo ištrinkite visus elementus turinčius porinį indeksą;
+
+        let ilgis = 30;
+        let ilgis2 = 10;
+        let masyvas = [];
+        let count = 0;
+        let more = 0 ;// daugiau nei 10 naudojamas suskaiciuoti
+        let indeksai = [];
+        let sum = 0;
+        let naujas = [];
+        let naujas1 = [];
+        let naujas2 =[];
+        let naujas3= [];
+        let lyginis = [];
+        let nelyginis = [];
+
+
+        //1 uzduotis
+        for (i = 0; i < ilgis; i++) {
+            masyvas.push(rand(5, 25))
+            count++
+        }
+        let max = Math.max(...masyvas)
+
+        //2. uzduoties a)
+
+        for (j = 0; j < masyvas.length; j++) {
+            if (masyvas[j] > 10) {
+                more++
+            }
+            //2. uzduoties b) pirma puse
+
+            if (masyvas[j] === max) {
+                indeksai.push(j)
+            }
+        }
+        //2 uzduoties c)
+
+        for (i = 0; i < masyvas.length; i++) {
+            if (masyvas[i] % 2 === 0) {
+                sum += masyvas[i]
+            }
+        }
+        console.log(masyvas)
+        console.log(more)
+        console.log(max)
+        console.log(indeksai)
+        console.log('suma ' + sum)
+
+        //2 užduoties d)
+
+        for (i = 0; i < ilgis; i++) {
+            naujas.push(rand(5, 25))
+            count++
+        }
+
+        console.log(naujas)
+
+        for (let i = 0; i < naujas.length; i++) {         
+            naujas1.push(naujas[i] - i)
+        }
+        console.log(naujas1)
+
+
+        //2 užduoties e)
+
+
+        for (let i = 0; i < ilgis2; i++) {  
+            naujas2.push(rand(5, 25))
+            count++
+        }
+        naujas3.push(...naujas1, ...naujas2)
+        console.log(naujas3)
+
+        //2 užduoties f)
+
+        for ( let i =0; i< naujas3.length; i++){
+          if(naujas3[i] % 2 ==0){
+            lyginis.push(naujas3[i])
+          }
+          else {
+            nelyginis.push( naujas3[i])
+          }
+        }
+        console.log('Lyginiai skaičiai '+ lyginis)
+        console.log('Nelyginiai skaičiai ' + nelyginis)
+
+        //2 užduoties g)
+
+
+    //     for ( let i =0; i< masyvas.length; i++){
+         
+    //     if (masyvas[i] > 15) {
+    //         masyvas[i] = 0
+    //     }  
+    // }
+        // console.log(masyvas)
+           
+        //2 užduoties h)
+
+        let masyvas1 = []
+
+     for ( let i =0; i< masyvas.length; i++){
+         
+        if (masyvas[i] < 10) {
+            masyvas1.push(masyvas[i])
+        }  
+    }
+        console.log(masyvas1)
+
+
+        //2 užduoties i)
+
+        let masyvas2 = []
+
+for ( let i =0; i< masyvas.length; i++){
+    
+   if (masyvas[i] % 2 != 0) {
+       masyvas2.push(masyvas[i])
+   }  
+}
+   console.log(masyvas2)
+
+
+
+
+           
+
+
+
+
+    </script>
+</body>
+
+</html>

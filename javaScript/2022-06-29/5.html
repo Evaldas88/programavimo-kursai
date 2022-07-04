@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>5task
+    </h1>
+    <div id="test">
+
+        <h3 id="test1" ></h3>
+
+    </div>
+    <script>
+
+        function rand(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        let all = document.getElementById("test");
+        let count = document.getElementById("test1");
+
+            let Petras = 0
+            let Kazys = 0
+            let stop = true
+
+            while(stop) {
+                let P = rand(10, 20)
+                Petras = Petras + P
+                let K = rand(5, 25)
+                Kazys = Kazys + K
+                if(Petras >=222 || Kazys >=222){
+                    stop = false
+                }
+            }
+        if(Kazys>Petras){
+            count.innerHTML += Kazys + 'Laimėjo Kazys'
+        }
+        else {
+            count.innerHTML += Petras + 'Laimėjo Petras'
+
+        }
+     
+    </script>
+</body>
+</html>

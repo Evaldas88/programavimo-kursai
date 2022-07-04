@@ -17,25 +17,24 @@
     </div>
     <script>
        let all = document.getElementById("test");
-            //  all.style.textAlign= 'center';
-            all.style.display= 'block';    
+            all.style.textAlign= 'center';
             all.style.lineHeight= '0.5';
-            // all.style.background = 'linear-gradient(45deg, transparent calc(50% - 1px), red 50%, transparent calc(50% + 1px) )'
-            // all.style.width = 'fit-content'
+           
 
-
-
-      for (let i = 0; i < 625; i++) {
-        if (i % 25 == 0 ) {
+        for (let i = 0; i <25; i++) {        
+        let counter = 24
+        if (i % 1 == 0 ) {
             all.innerHTML += "<br>"
-        }  
-        
-        if(i === 0 ) {
-          all.innerHTML += `<span style="color: red">*</span>`
-        } else {
-          all.innerHTML += '*'
         }
-      }
+        for( let j = 0; j < 25; j++){
+          if(i === counter || i === j) {
+              all.innerHTML += `<span style="color: red">*</span>`
+            } else {
+            all.innerHTML += '*'
+          }
+          counter--
+          }
+    }
     </script>
 </body>
 </html>
