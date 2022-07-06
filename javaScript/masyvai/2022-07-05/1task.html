@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function rand(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        //Sugeneruokite du masyvus, kurių reikšmės yra atsitiktiniai skaičiai nuo 100 iki 999. Masyvų ilgiai 100. Masyvų reikšmės turi būti unikalios savo masyve (t.y. neturi kartotis).
+
+        let masyvas = []
+
+        while (masyvas.length < 100) {
+            const random = rand(100, 999) + 1;
+            if (masyvas.indexOf(random) === -1) {
+                masyvas.push(random);
+            }
+        }
+
+        let masyvas1 = []
+
+        while (masyvas1.length < 100) {
+            const random = rand(100, 999) + 1;
+            if (masyvas1.indexOf(random) === -1) {
+                masyvas1.push(random);
+            }
+        }
+
+        console.log(masyvas)
+        console.log(masyvas1)
+
+        //Sugeneruokite masyvą, kuris būtų sudarytas iš reikšmių, kurios yra pirmame 1 uždavinio masyve, bet nėra antrame 1 uždavinio masyve.
+
+        let diff = () => masyvas = masyvas.filter((e) => masyvas1.indexOf(e))
+        console.log(diff())
+
+        //Sugeneruokite masyvą iš elementų, kurie kartojasi abiejuose 1 uždavinio masyvuose
+
+        const match = masyvas.filter(value => masyvas1.includes(value) && masyvas.splice(masyvas.indexOf(value), 1))
+        console.log(match)
+
+        //   let match1= [];
+        //     for (let i = 0; i < masyvas.length; i++){
+        //         for(let j = 0; j < masyvas1.length; j++){
+        //             if(masyvas[i] == masyvas1[j])
+        //             match1.push(masyvas[i])
+        //         }
+        //     }
+
+        //     console.log(match1)
+
+
+        // //Sugeneruokite masyvą, kurio indeksus sudarytų pirmo 1 uždavinio masyvo reikšmės, o jo reikšmės būtų iš antrojo masyvo.
+
+        let match1 = [];
+
+        //   let count = masyvas.length
+        // for (let i = masyvas.length; i > 1;  i--){
+        //     // for(let j = 0; j < masyvas1.length; j++){
+        //     //     if(masyvas[i] == masyvas1[j])
+        //     // }
+        //     match1 = masyvas[i];
+
+            for(let i = 0; i < masyvas.length; i++){
+                for(let j = 0; j < masyvas1.length; j++){
+                match1.push(masyvas)
+            }
+        }
+
+        // }
+
+        console.log(match1)
+
+
+
+
+
+
+
+// Sugeneruokite 10 skaičių masyvą pagal taisyklę: Du pirmi skaičiai- atsitiktiniai nuo 5 iki 25. Trečias, pirmo ir antro suma. Ketvirtas - antro ir trečio suma. Penktas trečio ir ketvirto suma ir t.t.
+// Sugeneruokite masyvą iš 10 elementų, kurio elementai būtų masyvai iš 5 elementų su reikšmėmis nuo 5 iki 25.
+// Naudodamiesi 6 uždavinio masyvu:
+// Suskaičiuokite kiek masyve yra elementų didesnių už 10;
+// Raskite didžiausio elemento reikšmę;
+// Suskaičiuokite kiekvieno antro lygio masyvų su vienodais indeksais sumas (t.y. suma reikšmių turinčių indeksą 0, 1 ir t.t.)
+// Visus masyvus “pailginkite” iki 7 elementų
+// Suskaičiuokite kiekvieno iš antro lygio masyvų elementų sumą atskirai ir sumas panaudokite kaip reikšmes sukuriant naują masyvą. T.y. pirma naujo masyvo reikšmė turi būti lygi mažesnio masyvo, turinčio indeksą 0 dideliame masyve, visų elementų sumai 
+
+
+
+    </script>
+</body>
+
+</html>
