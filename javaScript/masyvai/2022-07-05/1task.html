@@ -63,32 +63,36 @@
 
         // //Sugeneruokite masyvą, kurio indeksus sudarytų pirmo 1 uždavinio masyvo reikšmės, o jo reikšmės būtų iš antrojo masyvo.
 
-        let match1 = [];
-
-        //   let count = masyvas.length
-        // for (let i = masyvas.length; i > 1;  i--){
-        //     // for(let j = 0; j < masyvas1.length; j++){
-        //     //     if(masyvas[i] == masyvas1[j])
-        //     // }
-        //     match1 = masyvas[i];
+     
+        
+        let masyvas3 = []
 
             for(let i = 0; i < masyvas.length; i++){
                 for(let j = 0; j < masyvas1.length; j++){
-                match1.push(masyvas)
+                    masyvas3[masyvas[i]] = masyvas1[i]
             }
         }
-
-        // }
-
-        console.log(match1)
-
-
-
-
-
-
-
+        console.log('Reikiamas:')
+        console.log(masyvas3)
 // Sugeneruokite 10 skaičių masyvą pagal taisyklę: Du pirmi skaičiai- atsitiktiniai nuo 5 iki 25. Trečias, pirmo ir antro suma. Ketvirtas - antro ir trečio suma. Penktas trečio ir ketvirto suma ir t.t.
+
+        // let naujas = new Array(10)
+         masyvas =[]
+         for (i=0; i<10; i++){
+            let naujas = rand(5,25)
+         if( i==0 || i==1){
+         masyvas.push(naujas)
+         } else {
+            masyvas.push(masyvas[i - 2] + masyvas[i-1])
+         }
+        }
+    //  naujas.splice(0, 2, rand(5, 25), rand(5, 25))
+
+        console.log(masyvas)
+
+
+
+
 // Sugeneruokite masyvą iš 10 elementų, kurio elementai būtų masyvai iš 5 elementų su reikšmėmis nuo 5 iki 25.
 // Naudodamiesi 6 uždavinio masyvu:
 // Suskaičiuokite kiek masyve yra elementų didesnių už 10;

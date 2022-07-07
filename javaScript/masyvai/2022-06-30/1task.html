@@ -119,13 +119,13 @@
         //2 užduoties g)
 
 
-    //     for ( let i =0; i< masyvas.length; i++){
+        for ( let i =0; i< masyvas.length; i++){
          
-    //     if (masyvas[i] > 15) {
-    //         masyvas[i] = 0
-    //     }  
-    // }
-        // console.log(masyvas)
+        if (masyvas[i] > 15 &&  masyvas[i] % 2 === 0) {
+            masyvas[i] = 0
+        }  
+    }
+        console.log('g ' +masyvas)
            
         //2 užduoties h)
 
@@ -133,11 +133,12 @@
 
      for ( let i =0; i< masyvas.length; i++){
          
-        if (masyvas[i] < 10) {
-            masyvas1.push(masyvas[i])
-        }  
+        if (masyvas[i] > 10) {
+            masyvas.splice(i, 1);
+                i--;
     }
-        console.log(masyvas1)
+}
+        console.log(masyvas)
 
 
         //2 užduoties i)
@@ -147,8 +148,10 @@
 for ( let i =0; i< masyvas.length; i++){
     
    if (masyvas[i] % 2 != 0) {
-       masyvas2.push(masyvas[i])
-   }  
+            masyvas2.splice(masyvas[i], 1)
+        }  else {
+            masyvas2.push(masyvas[i])
+        }
 }
    console.log(masyvas2)
 

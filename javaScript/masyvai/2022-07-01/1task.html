@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div id="root"></div>
     <script>
 
-//Sugeneruokite masyvą, kurio reikšmės atsitiktinės raidės A, B, C ir D, o ilgis 200. Suskaičiuokite kiek yra kiekvienos raidės.
+        //Sugeneruokite masyvą, kurio reikšmės atsitiktinės raidės A, B, C ir D, o ilgis 200. Suskaičiuokite kiek yra kiekvienos raidės.
 
         function rand(min, max) {
             min = Math.ceil(min);
@@ -25,84 +27,99 @@
 
         let raides = "ABCD"
         let ilgis = 200
-        let count = 1
+        // let count = 1
         let text = ''
-        let  o = {}
-        // text.split('')
+        let o = {}
+        text.split('')
 
         for (i = 0; i < 200; i++) {
-    
-           let text = raides.charAt(Math.random() * raides.length)
+
+            let text = raides.charAt(Math.random() * raides.length)
             masyvas.push(text)
         }
-          
+
 
         console.log(masyvas)
 
-        for (let i = 0; i < masyvas.length; i++){
-            if(masyvas[i] === 0 ){
+        for (let i = 0; i < masyvas.length; i++) {
+            if (masyvas[i] === 0) {
                 count++
             }
         }
-        masyvas.forEach(w => w.split('').forEach(a => o[a] = (o[a] || 0)+1));
+        masyvas.forEach(w => w.split('').forEach(a => o[a] = (o[a] || 0) + 1));
         console.log(o)
 
         // Išrūšiuokite pirmo uždavinio masyvą pagal abecėlę.
 
-        masyvas.sort((a, b) => a - b);
+        masyvas.sort();
         console.log(masyvas)
 
-//Sugeneruokite 3 masyvus pagal pirmojo uždavinio sąlygą. Sudėkite masyvus, sudėdami reiksmes pagal atitinkamus indeksus. Paskaičiuokite kiek unikalių (po vieną, nesikartojančių) reikšmių ir kiek unikalių kombinacijų gavote.
-
+        //Sugeneruokite 3 masyvus pagal pirmojo uždavinio sąlygą. Sudėkite masyvus, sudėdami reiksmes pagal atitinkamus indeksus. Paskaičiuokite kiek unikalių (po vieną, nesikartojančių) reikšmių ir kiek unikalių kombinacijų gavote.
+        masyvas = []
         for (i = 0; i < 200; i++) {
-            
+
             let text = raides.charAt(Math.random() * raides.length)
             masyvas.push(text)
         }
 
         for (i = 0; i < 200; i++) {
-            
+
             let text = raides.charAt(Math.random() * raides.length)
             masyvas1.push(text)
         }
 
         for (i = 0; i < 200; i++) {
-            
+
             let text = raides.charAt(Math.random() * raides.length)
             masyvas2.push(text)
         }
 
 
-        let masyvas3 = [masyvas, masyvas1, masyvas2].reduce((a,b) => a.map((v, i) => v + b[i]));
+        // let masyvas3 = [masyvas, masyvas1, masyvas2].reduce((a, b) => a.map((v, i) => v + b[i]));
+        let masyvas3 = []
+        let counter = 0
 
+        for(let i = 0; i < masyvas.length; i++) {
+            let combo = masyvas[i] + masyvas1[i] + masyvas2[i]
+            masyvas3.push(combo);
+         if (masyvas3[combo]){
+            masyvas3[combo]++
+        }else {
+            masyvas3[combo]=1
+            counter++
+        }
+    }
 
-         let a = {};
-         for( i = 0; i < masyvas3.length; i++){
-            a[masyvas3[i]] = 1 + (a[masyvas3[i]] || 0)
-         }
+        //  if (masyvas[i] === masyvas1[i] && masyvas1[i] === masyvas2[i] && masyvas[i] === masyvas2[i] ){
+        //     masyvas3[combo] = 1
+        // }
 
-
-
-
-
-
-        console.log(masyvas)
-        console.log(masyvas1)
-        console.log(masyvas2)
+        // console.log(masyvas)
+        // console.log(masyvas1)
+        // console.log(masyvas2)
         console.log(masyvas3)
 
-        console.log(a)
+        // masyvas = []
+        // for (let i = 0; i < masyvas3.length; i++) {
+            
+            // let combo = masyvas[i] + masyvas1[i] + masyvas2[i]
+            //  masyvas3.push(combo)
+            //  masyvas = [...new Set(masyvas3)]
+        // }
+        // console.log(masyvas)
 
 
+        //  let a = {};
+        //  for( i = 0; i < masyvas3.length; i++){
+        //     // a[masyvas3[i]] = 1 + (a[masyvas3[i]] || 0)
+        //     if(masyvas3[i] === 0 || masyvas2 === 0 || masyvas3 === 0){
+        //          a[masyvas3[i]] = 1 + (a[masyvas3[i]] || 0)
 
-
-
-
-
-
-
-
+        //     }
+        //  }
+        //  console.log(a)
 
     </script>
 </body>
+
 </html>
