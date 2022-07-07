@@ -71,14 +71,18 @@
 
         let count2 = 0 ;
         let count3 = 0 ;
-
+        let diff = 0
          for( i = 0; i < 50; i++){
-            if( i<ilgis1.length && i<ilgis3.length ){
-                count2 = count2 + ilgis1[i]
-                count3 = count3 + ilgis3[i]
-            }
-         }
+                count2 += ilgis1[i]
+                count3 += ilgis3[i]
+                diff = count2 - count3 
+                if(diff>30){
+                    
+                }else {
+                    break
+                }
 
+         }  
 
 
 
@@ -86,6 +90,7 @@
          
          console.log(count2)
          console.log(count3)
+         console.log(diff)
 
 
 
