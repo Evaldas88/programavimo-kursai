@@ -16,11 +16,10 @@
         
         let ilgis = 101;
         let masyvas = [];
-        let count = 0 ;
-        let count1 = [] ;
+      
         // let unique = []
-     
-        let unique = []
+        let count = 0 ;
+        let unique = [];
 
         
             // Array.from(new Set(masyvas));
@@ -30,16 +29,20 @@
             unique.push(count)
 
         }
+        console.log(unique)  
+
         let masyvasMax = unique.sort(function(a, b){return b - a}); 
 
         let max = masyvasMax.slice(1, 101);
 
-        console.log (max)
+        console.log (max[0])
 
-        console.log(unique)  
        
         let direction = false;
 
+
+        let count2 = 0 ;
+        let count3 = 0 ;
         masyvas.push(max[0]) ;
         
         for(i = 0; i < max.length; i++){
@@ -52,7 +55,30 @@
                 direction = true
             }
         }
+
+
+
+        
+        for (i = 0; i < masyvas.length; i++){
+            if(i < parseInt(masyvas.length / 2)){
+                count2 += masyvas[i];
+            } else{
+                count3 += masyvas[i];
+            }
+        }
+
+       
+
+
+        
         console.log(masyvas)
+
+        console.log(count2)
+        console.log(count3)
+
+
+
+
 
     </script>
 </body>
