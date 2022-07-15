@@ -742,12 +742,10 @@ h5 {
     height: 100%;
     /* Full height */
 
-    /* scroll ifEnable needed */
-    /* overflow: auto; */
     /* Fallback color */
     /* background: #0b0b0b;     */
     background-color: rgb(10, 10, 10);
-    z-index: 99999;
+    z-index: 999;
     /* overflow: hidden; */
     opacity: 0.8;
 }
